@@ -1,0 +1,236 @@
+body {
+  font-family: sans-serif;
+  background-color: #040404;
+  color: #fff;
+  position: relative;
+  background: transparent;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  background: #040404 top right no-repeat;
+  background-size: cover;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  z-index: -1;
+}
+
+a {
+  color: silver;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+#landing {
+  width: 100%;
+  height: 100vh;
+  background: white top right;
+  background-size: cover;
+  position: relative;
+}
+
+#landing::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+#landing .landing-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 15px;
+  color: black;
+}
+
+#landing h1 {
+  margin: 0 0 10px 0;
+  font-size: 64px;
+  font-family: fantasy;
+  color: black;
+}
+
+#landing h1:hover {
+  color: gold;
+}
+
+#landing h2 {
+  font-weight: bold;
+  color: black;
+  margin: 20px;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+#landing h2:hover {
+  color: silver;
+}
+
+#landing .btn-scroll {
+  -webkit-transition: .5s;
+  transition: .5s;
+  color: black;
+}
+
+#landing .btn-scroll i {
+  font-size: 48px;
+  border-radius: 25px;
+  padding: 20px;
+  width: 200px;
+  height: 150px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.section-title {
+  color: yellow;
+  text-decoration: underline;
+  font-weight: bolder;
+  width: 15%;
+}
+
+.skills {
+  padding-top: 10px;
+}
+
+.skills .progress {
+  height: 45px;
+  display: block;
+  background: none;
+  border-radius: 0;
+}
+
+.skills .progress span {
+  color: yellow;
+  font-size: medium;
+}
+
+.skills .progress .skills {
+  padding: 10px 0;
+  margin: 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 470;
+  font-family: sans-serif;
+}
+
+.skills .progress .skills .val {
+  float: right;
+  font-style: normal;
+}
+
+.skills .progress-bar-wrap {
+  background: black;
+  border: 1px white solid;
+}
+
+.skills .progress-bar {
+  height: 15px;
+  background: -webkit-gradient(linear, left top, right top, from(#5f5d5d), to(white));
+  background: linear-gradient(to right, #5f5d5d, white);
+}
+
+.skills .progress-bar:hover {
+  background: -webkit-gradient(linear, left top, right top, from(black), to(white));
+  background: linear-gradient(to right, black, white);
+}
+
+.resume .resume-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: yellow;
+}
+
+.resume .resume-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid silver;
+  position: relative;
+}
+
+.resume .resume-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  color: silver;
+  margin-bottom: 10px;
+}
+
+.resume .resume-item h5 {
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.resume .resume-item ul {
+  padding-left: 20px;
+}
+
+.resume .resume-item ul li {
+  padding-bottom: 0;
+}
+
+.resume .resume-item:last-child {
+  padding-bottom: 0;
+}
+
+.resume .resume-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: red;
+  border: 2px solid silver;
+}
+
+.letter {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  color: white;
+  background: black;
+  border: 3px white solid;
+}
+
+.letter:hover {
+  color: green;
+}
+/*# sourceMappingURL=style.css.map */
